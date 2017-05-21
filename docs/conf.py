@@ -19,8 +19,8 @@ sys.path.append(os.path.join(root, 'flask_hal'))
 import flask_hal  # noqa
 
 # Project details
-project = u'Flask-HAL'
-copyright = u'{0}, SOON_ London Ltd'.format(datetime.datetime.utcnow().year)
+project = 'Flask-HAL'
+copyright = '{0}, SOON_ London Ltd'.format(datetime.datetime.utcnow().year)
 version = open('./../VERSION.txt').read().strip()
 release = version
 

@@ -87,7 +87,7 @@ class BaseDocument(object):
         if self.embedded:
             document.update({
                 '_embedded': dict(
-                    (n, v.to_dict()) for n, v in self.embedded.items()
+                    (n, v.to_dict()) for n, v in list(self.embedded.items())
                 )
             })
 

@@ -117,7 +117,7 @@ def test_data_in_embedded_can_be_array():
         )
         expected = {
             'currentlyProcessing': 14,
-            '_links': {'self': {'href': u'/entity/231'}},
+            '_links': {'self': {'href': '/entity/231'}},
             '_embedded': {
                 'order': [{
                     'total': 30.00,
@@ -171,7 +171,7 @@ def test_data_in_embedded_can_be_array_of_documents():
         )
         expected = {
             'currentlyProcessing': 14,
-            '_links': {'self': {'href': u'/entity/231'}},
+            '_links': {'self': {'href': '/entity/231'}},
             '_embedded': {
                 'order': [
                     {

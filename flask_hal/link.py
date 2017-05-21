@@ -86,7 +86,7 @@ class Collection(list):
         links = {}
 
         for link in self:
-            if link.rel in links.keys():
+            if link.rel in list(links.keys()):
                 if isinstance(links[link.rel], dict):
                     links[link.rel] = [links[link.rel]]
                 links[link.rel].append(link.to_dict()[link.rel])
